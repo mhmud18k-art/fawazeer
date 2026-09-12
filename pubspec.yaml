@@ -1,0 +1,50 @@
+name: fawazeer
+description: "لعبة فوازير جماعية عربية — تُلعب على جهاز واحد، أوفلاين بالكامل ومجانية."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # تعريب واجهات Material (RTL)
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  # إدارة الحالة
+  flutter_riverpod: ^2.6.1
+  # التخزين المحلي (الإعدادات + الأسئلة المخصصة)
+  shared_preferences: ^2.3.3
+  # الأصوات
+  audioplayers: ^6.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/questions/
+    - assets/sounds/
+
+  fonts:
+    - family: Tajawal
+      fonts:
+        - asset: assets/fonts/Tajawal-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Tajawal-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Tajawal-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Tajawal-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Tajawal-Black.ttf
+          weight: 900
